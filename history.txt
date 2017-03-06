@@ -26,11 +26,11 @@
    26  mv polya.md Polya
    27  ls
    28  cd Polya
-   29  git init 
+   29  git init
    30  git add Polya
    31  git add polya.md
    32  git commit -m "Einstein"
-   33  git push origin master 
+   33  git push origin master
    34  cd
    35  pwd
    36  ls
@@ -50,8 +50,8 @@
    50  ls
    51  git add polya.md
    52  git commit -m "Einstein"
-   53  push origin master 
-   54  git push origin master 
+   53  push origin master
+   54  git push origin master
    55  git checkout NewEinstein
    56  git checkout -- polya.md
    57  atom poly.md
@@ -108,21 +108,21 @@
   108  mkdir BranchPractice
   109  cd BranchPractice
   110  git init
-  111  git branch 
+  111  git branch
   112  touch Branch2
   113  git status
   114  git add Branch2
   115  ls
   116  git status
-  117  git commit 
+  117  git commit
   118  git checkout Branch4
   119  git checkout -b Branch4
   120  atom Branch4
   121  git commit Branch4
   122  git add Branch4
   123  git commit Branch4
-  124  git checkout master 
-  125  git merge Branch4 
+  124  git checkout master
+  125  git merge Branch4
   126  pwd
   127  cd
   128  ls
@@ -146,7 +146,7 @@
   146  status
   147  git add poly.md
   148  ls
-  149  git init 
+  149  git init
   150  ls
   151  status
   152  git status
@@ -189,7 +189,7 @@
   189  mkdir Einstein Excercise
   190  touch polya.md
   191  atom polya.md
-  192  git add poly.md 
+  192  git add poly.md
   193  git init
   194  git add polya.md
   195  git status
@@ -228,7 +228,7 @@
   228  git checkout master
   229  ls
   230  git status
-  231  git merge WORK 
+  231  git merge WORK
   232  git push origin master
   233  git remote -v
   234  git status
@@ -241,7 +241,7 @@
   241  grep -r ".git" .
   242  grep -ra ".git"
   243  cat polya.md
-  244  ls 
+  244  ls
   245  ls problem-solving-assessment
   246  cd problem-solving-assessment
   247  mv ../polya.md .
@@ -289,7 +289,7 @@
   289  ls
   290  sudo rm -r tested_repo
   291  ls
-  292  cd 
+  292  cd
   293  ls
   294  rm -r YELLOW
   295  ls
@@ -310,7 +310,7 @@
   310  git commit -m "Added ReadMe"
   311  git commit -m "Added Readme"
   312  git push origin master
-  313  git remote add origin https://github.com/jordanwhitestephenson/g-school/vim-assessment.git  
+  313  git remote add origin https://github.com/jordanwhitestephenson/g-school/vim-assessment.git
   314  git remote -v
   315  git status
   316  ls
@@ -332,7 +332,7 @@
   332  ls
   333  git init
   334  git add README.md
-  335  git commit 
+  335  git commit
   336  git push origin master
   337  history
   338  git status
@@ -378,7 +378,7 @@
   378  git clone https://github.com/jordanwhitestephenson/vim-assessment.git
   379  ls vim-assessment
   380  git log
-  381  git push origin master 
+  381  git push origin master
   382  git checkout -b VIM Example
   383  git checkout -b VIMSTUFF
   384  git commit -m "did stuff"
@@ -407,7 +407,7 @@
   407  ls -l
   408  git init
   409  git add README.md
-  410  git commit 
+  410  git commit
   411  git push origin master
   412  ls
   413  cd
@@ -418,7 +418,7 @@
   418  atom README.md
   419  git init
   420  git add README.md
-  421  git commit 
+  421  git commit
   422  git push origin master
   423  git status
   424  cd
@@ -434,14 +434,14 @@
   434  cd
   435  ls
   436  ls Try3
-  437  cd 
+  437  cd
   438  rm README.md
   439  ls
   440  cd Try3
   441  ls
   442  git add README.md
   443  git status
-  444  git commit 
+  444  git commit
   445  git push origin master
   446  ls
   447  cd
@@ -509,14 +509,14 @@
   509  git status
   510  git merge VIMSTUFF Master
   511  git push origin master
-  512  git pull 
+  512  git pull
   513  git pull origin master
   514  git branch --set-upstream-to=origin/<branch> VIMSTUFF'\n\n:q\n:wq\n\n
   515  git push origin master
   516  git --help
   517  git reset
   518  git diff
-  519  git commit 
+  519  git commit
   520  ls
   521  git add README.md
   522  git commit
@@ -566,7 +566,7 @@
   566  cd vim-assessment
   567  ls
   568  git add README.md
-  569  git commit 
+  569  git commit
   570  git push origin master
   571  git status
   572  git add README.md
@@ -690,7 +690,7 @@
   690  ls
   691  ls mystery
   692  head -n 20 people
-  693  atom people 
+  693  atom people
   694  head -n 20 people
   695  ..
   696  ls
@@ -708,14 +708,14 @@
   708  cat crimescene
   709  grep CLUE
   710  grep CLUE crimescene
-  711  cat people 
+  711  cat people
   712  grep Annabel people
   713  head -n 173 streets/Mattapan_Street | tail -n 1
   714  grep #9437737
   715  grep #9437737 interviews
   716  cd interviews
   717  grep #9437737 interviews
-  718  grep 9437737 interview 
+  718  grep 9437737 interview
   719  ls
   720  grep 9437737
   721  grep 9437737 interviews
@@ -734,7 +734,7 @@
   734  npm
   735  npm test
   736  git add -A
-  737  git commit -m "Finished All 5 Excersises" 
+  737  git commit -m "Finished All 5 Excersises"
   738  git push origin master
   739  git clone https://github.com/jordanwhitestephenson/js-loops-and-conditionals-assessment.git
   740  ls
@@ -778,15 +778,15 @@
   778  git status
   779  git init
   780  git remote add origin https://github.com/jordanwhitestephenson/js-loops-and-conditionals-assessment.git
-  781  git pull 
+  781  git pull
   782  git pull origin master
   783  git log
   784  git status
   785  cat main.js
   786  git add main.js
-  787  git commit -m "Finsihed Loop Excercise" 
-  788  git push origin master 
-  789  cd 
+  787  git commit -m "Finsihed Loop Excercise"
+  788  git push origin master
+  789  cd
   790  pwd
   791  ls
   792  rm -r Try3
@@ -802,7 +802,7 @@
   802  cd memberships
   803  ls
   804  cat AAA
-  805  grep Annabel 
+  805  grep Annabel
   806  grep "Annabel"
   807  grep "Annabel" membership
   808  grep "Annabel" AAA
@@ -874,7 +874,7 @@
   874  grep "L337"
   875  grep "L337" vehicles
   876  grep "L337" "Blue" vehicles
-  877  grep "L337" "Honda" 
+  877  grep "L337" "Honda"
   878  grep "Honda" vehicles
   879  grep "Honda" "L337" vehicles
   880  grep "L337" vehicles
@@ -941,7 +941,7 @@
   941  ../
   942  ls
   943  cat crimescene
-  944  grep 
+  944  grep
   945  grep "CLUE" crimescene
   946  ../
   947  ls
@@ -982,7 +982,7 @@
   982  cd
   983  ls
   984  npm test ./store1
-  985  cd 
+  985  cd
   986  ls
   987  cd ccf-data-structures
   988  npm test ./store1
@@ -1034,7 +1034,7 @@
  1034  cd unit-1
  1035  ls
  1036  git clone https://github.com/gSchool/big-o-assessment.git
- 1037  git commit -m "Big O Assessment" 
+ 1037  git commit -m "Big O Assessment"
  1038  git add A
  1039  git add -A
  1040  history
@@ -1046,7 +1046,7 @@
  1046  git add -A
  1047  cd git-branch-exercise
  1048  ls
- 1049  cd 
+ 1049  cd
  1050  ls
  1051  cd galvanize
  1052  ls
@@ -1057,7 +1057,7 @@
  1057  git commit -m "big O Assessment"
  1058  git push origin master
  1059  ls
- 1060  cd 
+ 1060  cd
  1061  ls
  1062  cd galvanize
  1063  ls
@@ -1098,7 +1098,7 @@
  1098  ls
  1099  touch greet.js
  1100  atom greet.js
- 1101  cd 
+ 1101  cd
  1102  ls
  1103  cd galvanize
  1104  ls
@@ -1123,7 +1123,7 @@
  1123  ls
  1124  git add -A
  1125  git status
- 1126  git commit -m "Function Assessment Completed" 
+ 1126  git commit -m "Function Assessment Completed"
  1127  git push origin master
  1128  ls
  1129  ./
@@ -1135,7 +1135,7 @@
  1135  git add -A
  1136  ls
  1137  git status
- 1138  git commit -m "Function Assessment Completed" 
+ 1138  git commit -m "Function Assessment Completed"
  1139  git push origin master
  1140  ../
  1141  ls
@@ -1163,7 +1163,7 @@
  1163  git remote -v
  1164  git remote
  1165  git clone  https://github.com/jordanwhitestephenson/function-assessment-js.
- 1166  cd 
+ 1166  cd
  1167  ls
  1168  cd galvanize
  1169  ls
@@ -1186,11 +1186,11 @@
  1186  atom .
  1187  ls
  1188  git add -A
- 1189  ls 
+ 1189  ls
  1190  cd function-assessment-js
  1191  git add -A
  1192  git status
- 1193  ls 
+ 1193  ls
  1194  git commit -m "Completed Function Assessment"
  1195  git push origin master
  1196  ls
@@ -1257,7 +1257,7 @@
  1257  cd src
  1258  ls
  1259  node higherorderfunctionnotes.js
- 1260  cd 
+ 1260  cd
  1261  ls
  1262  cd galvanize
  1263  cd
@@ -1279,7 +1279,7 @@
  1279  git remote -V
  1280  git remote v
  1281  git remote -v
- 1282  cd 
+ 1282  cd
  1283  ls
  1284  galvanize/projects
  1285  ls
@@ -1305,7 +1305,7 @@
  1305  git clone https://github.com/jordanwhitestephenson/lodash.git
  1306  cd lodash
  1307  atom .
- 1308  npm install 
+ 1308  npm install
  1309  npm test
  1310  cd
  1311  mkdir zsh-custom
@@ -1339,7 +1339,7 @@
  1339  cd lodash
  1340  npm test
  1341  ls
- 1342  cd 
+ 1342  cd
  1343  ls
  1344  cd galvanize
  1345  ls
@@ -1351,7 +1351,7 @@
  1351  atom .
  1352  cd unit-1
  1353  ls
- 1354  cd 
+ 1354  cd
  1355  ls
  1356  cd galvanize
  1357  ls
@@ -1392,7 +1392,7 @@
  1392  ls
  1393  cd Assessments
  1394  cd
- 1395  cd 
+ 1395  cd
  1396  ls
  1397  cd galvanize
  1398  ls
@@ -1448,7 +1448,7 @@
  1448  cd js-native-array-methods
  1449  ls
  1450  npm test
- 1451  cd 
+ 1451  cd
  1452  ls
  1453  cd galvanize
  1454  ls
@@ -1466,7 +1466,7 @@
  1466  atom .
  1467  npm test
  1468  cd
- 1469  ls 
+ 1469  ls
  1470  cd galvanize
  1471  ls
  1472  cd unit-1 touch yellPhase.js
@@ -1533,7 +1533,7 @@
  1533  git commit -m "added file"
  1534  git add addFile
  1535  git commit -m "added file"
- 1536  git push origin master 
+ 1536  git push origin master
  1537  cd
  1538  ls
  1539  cd galvanize
@@ -1634,7 +1634,7 @@
  1634  cd galvanize-sports
  1635  ls
  1636  npm test
- 1637  cd 
+ 1637  cd
  1638  ls
  1639  cd galvanize
  1640  ls
@@ -1664,7 +1664,7 @@
  1664  npm test
  1665  ls
  1666  npm test
- 1667  npm test 
+ 1667  npm test
  1668  npm test
  1669  ls
  1670  cd
@@ -1687,7 +1687,7 @@
  1687  ls
  1688  cd Assessments
  1689  git clone https://github.com/gSchool/function-tests.git
- 1690  atom . 
+ 1690  atom .
  1691  atom .
  1692  npm test
  1693  npm install
@@ -1721,7 +1721,7 @@
  1721  atom .
  1722  git add -A
  1723  git commit -m "Finished Galvanize Sports"
- 1724  git push init master 
+ 1724  git push init master
  1725  ls
  1726  ../
  1727  ls
@@ -1736,7 +1736,7 @@
  1736  ls
  1737  cd Assessments
  1738  git clone https://github.com/jordanwhitestephenson/dom-assessment.git
- 1739  atom . 
+ 1739  atom .
  1740  ls
  1741  ../
  1742  ls
@@ -1745,7 +1745,7 @@
  1745  cd galvanize-sports
  1746  git add -A
  1747  git push init master
- 1748  git push origin master 
+ 1748  git push origin master
  1749  ../
  1750  ..
  1751  ls
@@ -1773,9 +1773,9 @@
  1773  ls
  1774  cd mocha-chai-assessment
  1775  npm test
- 1776  npm install 
+ 1776  npm install
  1777  npm test
- 1778  npm install 
+ 1778  npm install
  1779  npm test
  1780  ls
  1781  cd longestWord.js
@@ -1800,9 +1800,9 @@
  1800  ;s
  1801  ls
  1802  git add -A
- 1803  git commit "Finished JS Scope and Life Assessment" 
- 1804  git init origin master 
- 1805  git push origin master 
+ 1803  git commit "Finished JS Scope and Life Assessment"
+ 1804  git init origin master
+ 1805  git push origin master
  1806  git status
  1807  git push origin master
  1808  git status
@@ -1812,10 +1812,10 @@
  1812  git add -A
  1813  ls
  1814  git status
- 1815  git commit 
+ 1815  git commit
  1816  git commit -m "FINISHED"
  1817  git status
- 1818  git push -u origin master 
+ 1818  git push -u origin master
  1819  ../
  1820  git clone https://github.com/jordanwhitestephenson/js-scope-and-iife-assessment.git
  1821  ../
@@ -1829,7 +1829,7 @@
  1829  npm test
  1830  git add -A
  1831  git commit -m "Finished Scope and Life Assessment"
- 1832  git push origin master 
+ 1832  git push origin master
  1833  ../
  1834  ls
  1835  cd Assessments
@@ -1888,7 +1888,7 @@
  1888  npm install
  1889  git add -A
  1890  git commit -m "Finished Loops and Conditions"
- 1891  git push origin master 
+ 1891  git push origin master
  1892  cd
  1893  ls
  1894  cd galvanize
@@ -1916,7 +1916,7 @@
  1916  firebase login
  1917  firebase init
  1918  firebase deploy
- 1919  firebase deploy 
+ 1919  firebase deploy
  1920  firebase deploy
  1921  npm test
  1922  cd
@@ -1943,7 +1943,7 @@
  1943  npm test
  1944  git add -A
  1945  git commit -m "Finished Higher Order Functions"
- 1946  git push origin master 
+ 1946  git push origin master
  1947  cd
  1948  ls
  1949  cd galvanize
@@ -1957,7 +1957,7 @@
  1957  ls
  1958  cd js-native-array-methods
  1959  ls
- 1960  atom . 
+ 1960  atom .
  1961  npm test
  1962  ls
  1963  ..
@@ -2025,7 +2025,7 @@
  2025  ls
  2026  cd simple-site-project
  2027  atom .
- 2028  cd 
+ 2028  cd
  2029  ls
  2030  cd galvanize
  2031  ls
@@ -2045,7 +2045,7 @@
  2045  ls
  2046  cd simple-site-project
  2047  atom .
- 2048  cd 
+ 2048  cd
  2049  ls
  2050  cd galvanize
  2051  ls
@@ -2100,7 +2100,7 @@
  2100  ls
  2101  cd Assessments
  2102  ls git clone https://github.com/jordanwhitestephenson/jQuery-assessment.git
- 2103  atom . 
+ 2103  atom .
  2104  ls
  2105  cd galvanize
  2106  ls
@@ -2157,12 +2157,12 @@
  2157  atom .
  2158  npm test
  2159  git add -A
- 2160  git commit -m "Simple Website Round 1" 
+ 2160  git commit -m "Simple Website Round 1"
  2161  git push origin master
  2162  git clone https://github.com/jordanwhitestephenson/galvanize-personnel.git
  2163  atom .
  2164  ls
- 2165  mv galvanize-personnel galvanize   
+ 2165  mv galvanize-personnel galvanize
  2166  ls
  2167  cd galvanize
  2168  ls
@@ -2195,7 +2195,7 @@
  2195  git add -A
  2196  atom .
  2197  npm test
- 2198  cd 
+ 2198  cd
  2199  ls
  2200  cd gava
  2201  cd galvanize
@@ -2233,12 +2233,12 @@
  2233  ../
  2234  dom-a
  2235  cd dom-assessment
- 2236  atom . 
+ 2236  atom .
  2237  git add -A
  2238  git commit -m "Finished DOM Assessment"
  2239  git init master origin
  2240  git status
- 2241  git push origin master 
+ 2241  git push origin master
  2242  cd
  2243  ls
  2244  mv js-array-assessment galvanize
@@ -2338,7 +2338,7 @@
  2338  cd agile-concepts-assessment
  2339  git add -A
  2340  git commit -m "Finished Agile Concepts-Assesment"
- 2341  git push origin master 
+ 2341  git push origin master
  2342  cd
  2343  ls
  2344  cd galvanize
@@ -2359,7 +2359,7 @@
  2359  mv galvanize galvanize-personal
  2360  ../
  2361  ls
- 2362  mv galvanize galvanize-personel 
+ 2362  mv galvanize galvanize-personel
  2363  ls
  2364  cd galvanize-person
  2365  cd galvanize-personel
@@ -2393,7 +2393,7 @@
  2393  ls
  2394  cd simple-site-project
  2395  ls
- 2396  git init origin master 
+ 2396  git init origin master
  2397  git commit -m "Lets See if this Works"
  2398  ls
  2399  ../
@@ -2438,7 +2438,7 @@
  2438  ls
  2439  firebase login
  2440  firebase init
- 2441  cd 
+ 2441  cd
  2442  ls
  2443  cd galvanize
  2444  ls
@@ -2603,7 +2603,7 @@
  2603  cd galvanize-personal
  2604  ls
  2605  atom .
- 2606  git init 
+ 2606  git init
  2607  git add -A
  2608  git commit -m "Finished Galvanize Personel"
  2609  git push origin master
@@ -2756,7 +2756,7 @@
  2756  atom .
  2757  git commit -m "Init Commit"
  2758  git pull https://github.com/jhernandez89/ecommerce-project
- 2759  git status 
+ 2759  git status
  2760  git add -A
  2761  git commit -m "Init Commit"
  2762  git pull https://github.com/jhernandez89/ecommerce-project
@@ -2774,9 +2774,9 @@
  2774  git checkout -b JordansBranch
  2775  ls
  2776  atom .
- 2777  git checkout master 
+ 2777  git checkout master
  2778  git status
- 2779  git pull origin master 
+ 2779  git pull origin master
  2780  atom .
  2781  cd
  2782  ls
@@ -2794,20 +2794,20 @@
  2794  git push origin master
  2795  git add -A
  2796  git commit -m "Added Hard and OG"
- 2797  git push origin master 
- 2798  git pull origin master 
+ 2797  git push origin master
+ 2798  git pull origin master
  2799  git status
- 2800  git push origin master 
+ 2800  git push origin master
  2801  ls
- 2802  git checkout JordansBranch 
- 2803  git merge master 
+ 2802  git checkout JordansBranch
+ 2803  git merge master
  2804  git add -A
  2805  git commit -m "Finished Images Array"
  2806  git push origin master
  2807  git checkout master
- 2808  git merge JordansBranch 
+ 2808  git merge JordansBranch
  2809  git status
- 2810  git push origin master 
+ 2810  git push origin master
  2811  git pull origin master
  2812  git push origin master
  2813  ls
@@ -2820,9 +2820,9 @@
  2820  ls
  2821  cd Excercise
  2822  ls
- 2823  cd galvanize-personnel 
+ 2823  cd galvanize-personnel
  2824  atom .
- 2825  git checkout JordansBranch 
+ 2825  git checkout JordansBranch
  2826  git checkout master
  2827  git pull origin master
  2828  git status
@@ -2838,7 +2838,7 @@
  2838  git commit -m "whatever"
  2839  git add -A
  2840  git commit -m "whatever"
- 2841  git pull 
+ 2841  git pull
  2842  git status
  2843  ../
  2844  ls
@@ -2867,9 +2867,9 @@
  2867  atom .
  2868  git add -A
  2869  git commit -m "Corrected Answers"
- 2870  git push origin master 
+ 2870  git push origin master
  2871  ls
- 2872  cd 
+ 2872  cd
  2873  ls
  2874  cd galvanize
  2875  ls
@@ -2888,7 +2888,7 @@
  2888  ls
  2889  cd ecommerce-project
  2890  atom .
- 2891  git checkout JordansBranch 
+ 2891  git checkout JordansBranch
  2892  atom .
  2893  git remote -v
  2894  git checkout master
@@ -2897,7 +2897,7 @@
  2897  git add -A
  2898  git commit -m "50 Cent Logo"
  2899  git push origin master
- 2900  git pull origin master 
+ 2900  git pull origin master
  2901  git diff
  2902  git push origin master
  2903  GIT DIFF
@@ -2906,7 +2906,7 @@
  2906  git commit -m "fixed a merge conflictttttt"
  2907  git push origin master
  2908  git pull origin master
- 2909  git checkout JordansBranch 
+ 2909  git checkout JordansBranch
  2910  git pull origin master
  2911  git remote -v
  2912  git status
@@ -2918,28 +2918,28 @@
  2918  git pull origin master
  2919  git push origin master
  2920  open products.html
- 2921  git merge JordansBranch 
+ 2921  git merge JordansBranch
  2922  git status
  2923  git log
  2924  git merge --abort
  2925  git status
- 2926  git checkout JordansBranch 
- 2927  git push origin JordansBranch 
+ 2926  git checkout JordansBranch
+ 2927  git push origin JordansBranch
  2928  git checkout master
  2929  git pull origin master
- 2930  git checkout JordansBranch 
+ 2930  git checkout JordansBranch
  2931  git merge master
  2932  git status
  2933  git add main.css
  2934  git add -A
  2935  git commit -m "SUCCESSFULLY MERGED EVERYTHING"
- 2936  git push origin JordansBranch 
+ 2936  git push origin JordansBranch
  2937  git checkout master
  2938  git pull origin master
- 2939  git checkout JordansBranch 
+ 2939  git checkout JordansBranch
  2940  git checkout master
- 2941  git checkout JordansBranch 
- 2942  git checkout master 
+ 2941  git checkout JordansBranch
+ 2942  git checkout master
  2943  ls
  2944  cd galvanize
  2945  ls
@@ -2947,32 +2947,32 @@
  2947  ls
  2948  cd ecommerce-project
  2949  ls
- 2950  git checkout JordansBranch 
+ 2950  git checkout JordansBranch
  2951  git add -A
  2952  git commit -m "Didn't do much"
- 2953  git push origin JordansBranch 
+ 2953  git push origin JordansBranch
  2954  git checkout master
  2955  git pull origin master
  2956  git checkout -b ProductPageAlign
- 2957  git pull origin master 
+ 2957  git pull origin master
  2958  git add -A
  2959  git commit -m "Deleted alot of CSS"
- 2960  git push origin ProductPageAlign 
+ 2960  git push origin ProductPageAlign
  2961  git checkout master
  2962  git pull origin master
- 2963  git checkout ProductPageAlign 
+ 2963  git checkout ProductPageAlign
  2964  git add -A
  2965  git commit -m "Change To Auto Width"
  2966  git checkout master
  2967  git pull origin master
  2968  open products.html
- 2969  git checkout ProductPageAlign 
+ 2969  git checkout ProductPageAlign
  2970  l
  2971  git pull origin master
  2972  atom .
  2973  git add -A
  2974  git commit -m "fixed mainProducts margin"
- 2975  git push origin ProductPageAlign 
+ 2975  git push origin ProductPageAlign
  2976  git checkout master
  2977  git pull origin master
  2978  atom .
@@ -3071,7 +3071,7 @@
  3071  git push origin CSSFinal
  3072  git checkout master
  3073  git pull origin master
- 3074  git checkout CSSFinal 
+ 3074  git checkout CSSFinal
  3075  atom .
  3076  git checkout master
  3077  ../
@@ -3114,7 +3114,7 @@
  3114  cd Unit1Project
  3115  l
  3116  ls
- 3117  cd ProjectB atom. 
+ 3117  cd ProjectB atom.
  3118  cd ProjectB
  3119  atom .
  3120  ls
@@ -3133,14 +3133,14 @@
  3133  git checkout -b mynewbranch
  3134  git add -A
  3135  git commit -m "Finished Proposal 1"
- 3136  git push origin mynewbranch 
+ 3136  git push origin mynewbranch
  3137  ls
  3138  git status
  3139  git remote -v
- 3140  git push origin master 
+ 3140  git push origin master
  3141  git remote set-url origin https://github.com/jordanwhitestephenson/q1-project-proposals.git
  3142  git remote -v
- 3143  git push origin master 
+ 3143  git push origin master
  3144  l
  3145  cat README.md
  3146  git push origin mynewbranch
@@ -3148,7 +3148,7 @@
  3148  git checkout -b secondbranch
  3149  git add -A
  3150  git commit -m "Finished Proposal 2"
- 3151  git push origin secondbranch 
+ 3151  git push origin secondbranch
  3152  git push origin master
  3153  l
  3154  git remote -v
@@ -3212,7 +3212,7 @@
  3212  ls
  3213  git commit -m "Last Change Thursday"
  3214  git status
- 3215  git add origin master 
+ 3215  git add origin master
  3216  git checkout master
  3217  git checkout origin master
  3218  $ npm install -g firebase-tools\n
@@ -3251,7 +3251,7 @@
  3251  git add -A
  3252  git commit -m "Just kidding"
  3253  firebase deploy
- 3254  git status 
+ 3254  git status
  3255  git add -A
  3256  cd
  3257  ls
@@ -3271,13 +3271,13 @@
  3271  echo "# Unit1Project" >> README.md
  3272  git init
  3273  git add README.md
- 3274  git commit -m "First Commit" 
+ 3274  git commit -m "First Commit"
  3275  git remote add origin https://github.com/jordanwhitestephenson/Unit1Project.git
  3276  git push -u origin master
  3277  ls
  3278  git add -A
  3279  git commit -m "Work"
- 3280  git push origin master 
+ 3280  git push origin master
  3281  npm install --save parsleyjs
  3282  cd
  3283  ls
@@ -3558,7 +3558,7 @@
  3558  ls
  3559  atom .
  3560  firebase init
- 3561  firebase deploy 
+ 3561  firebase deploy
  3562  ls
  3563  firebase deploy
  3564  firebase init
@@ -3611,13 +3611,13 @@
  3611  git push origin master
  3612  git checkout NativeArray
  3613  git checkout -b NativeArray
- 3614  git push origin NativeArray 
+ 3614  git push origin NativeArray
  3615  git branch
  3616  git add -A
  3617  git commit -m "Finsihed"
  3618  ls
  3619  git push origin master
- 3620  git push origin NativeArray 
+ 3620  git push origin NativeArray
  3621  git checkout origin master
  3622  git checkout master
  3623  git branch
@@ -3625,7 +3625,7 @@
  3625  git add -A
  3626  git status
  3627  git commit -m "Work"
- 3628  git checkout NativeArray 
+ 3628  git checkout NativeArray
  3629  git status
  3630  git add -A
  3631  git status
@@ -3659,7 +3659,7 @@
  3659  git clone https://github.com/jordanwhitestephenson/exercise-js-scope-hoisting-closure-higherorder.git
  3660  atom .
  3661  npm install
- 3662  cd 
+ 3662  cd
  3663  ls
  3664  cd galvanize
  3665  ls
@@ -3780,34 +3780,34 @@
  3780  git checkout master
  3781  git checkout -b AppendTitles
  3782  git branch
- 3783  git checkout GalvanizeEats 
+ 3783  git checkout GalvanizeEats
  3784  atom .
  3785  git checkout master
  3786  git merge GalvanizeEats
- 3787  git push origin master 
+ 3787  git push origin master
  3788  git branch
- 3789  git checkout AppendTitles 
+ 3789  git checkout AppendTitles
  3790  atom .
  3791  git branch
- 3792  git checkout GalvanizeEats 
+ 3792  git checkout GalvanizeEats
  3793  atom .
- 3794  git checkout AppendTitles 
+ 3794  git checkout AppendTitles
  3795  git branch
  3796  atom .
- 3797  git checkout 
+ 3797  git checkout
  3798  git checkout master
  3799  git checkout -b TitlesAppending
  3800  atom .
  3801  git add -A
  3802  git commit -m "Appeded food titles and prices"
- 3803  git push origin TitlesAppending 
+ 3803  git push origin TitlesAppending
  3804  git checkout master
  3805  atom .
- 3806  git merge TitlesAppending 
+ 3806  git merge TitlesAppending
  3807  git checkout -b Finish Shopping Cart
  3808  git checkout -b ShoppingCart
  3809  git branch
- 3810  git push origin ShoppingCart 
+ 3810  git push origin ShoppingCart
  3811  git add -A
  3812  git commit -m "FinishedShoppingCart"
  3813  git push origin ShoppingCart
@@ -3995,7 +3995,7 @@
  3995  ls
  3996  atom directions.warmup.js
  3997  ls
- 3998  atom 
+ 3998  atom
  3999  atom .
  4000  ls
  4001  cd Directions
@@ -4064,8 +4064,8 @@
  4064  brew install heroku
  4065  heroku help
  4066  heroku login
- 4067  mkdir express_deployement 
- 4068  ls 
+ 4067  mkdir express_deployement
+ 4068  ls
  4069  cd ex
  4070  cd express_deployement
  4071  npm init
@@ -4121,11 +4121,11 @@
  4121  cd AssessmentsUnit2
  4122  ls
  4123  git clone https://github.com/jordanwhitestephenson/heroku-fundamentals-assessment.git
- 4124  atom . 
+ 4124  atom .
  4125  ls
  4126  cd heroku-fundamentals-assessment
  4127  atom .
- 4128  npm install 
+ 4128  npm install
  4129  npm install dotenv --save
  4130  ../
  4131  ls
@@ -4226,7 +4226,7 @@
  4226  cd movie-crud
  4227  ls
  4228  atom .
- 4229  http localhost8080 
+ 4229  http localhost8080
  4230  ls
  4231  cd public
  4232  ls
@@ -4428,7 +4428,7 @@
  4428  ls
  4429  cd T9HackProject
  4430  atom .
- 4431  npm install 
+ 4431  npm install
  4432  npm init
  4433  ls
  4434  git init
@@ -4547,7 +4547,7 @@
  4547  git commit -m "Got LightHouse Request Working"
  4548  git push origin master
  4549  ls
- 4550  cd 
+ 4550  cd
  4551  cd g
  4552  cd galvanize
  4553  ls
@@ -4680,7 +4680,7 @@
  4680  cd movie-crud
  4681  ls
  4682  cd public
- 4683  node 
+ 4683  node
  4684  ls
  4685  cd public
  4686  ls
@@ -4696,7 +4696,7 @@
  4696  cd AssessmentsUnit2
  4697  ls
  4698  cd intro-to-crud-lesson
- 4699  atom. 
+ 4699  atom.
  4700  atom .
  4701  ../
  4702  ls
@@ -4882,7 +4882,7 @@
  4882  ../
  4883  ls
  4884  cd fs-pet-shop
- 4885  node pets.js 
+ 4885  node pets.js
  4886  Usage: node pets.js [read | create | update | destroy]
  4887  node pets.js
  4888  npm install -g
@@ -4939,7 +4939,7 @@
  4939  snippet
  4940  node pets.js
  4941  node pets.js option1 henrique
- 4942  node pets.js 
+ 4942  node pets.js
  4943  pets
  4944  node pets.js
  4945  pets what w
@@ -4961,7 +4961,7 @@
  4961  cd ExcercisesUnit2
  4962  ls
  4963  cd movie-crud
- 4964  atom. 
+ 4964  atom.
  4965  atom .
  4966  node pets.js what ya
  4967  node pets.js jordan
@@ -4970,22 +4970,22 @@
  4970  node pets.js read
  4971  node pets.js
  4972  node pets.js read
- 4973  node pets.js 
+ 4973  node pets.js
  4974  node pets.js read
  4975  node pets.js write
  4976  node pets.js read
  4977  node pets.js
  4978  node pets.js read
- 4979  node pets.js 
+ 4979  node pets.js
  4980  npm install bodyparser --save
  4981  npm body-parser --save
  4982  npm install body-parser
- 4983  node pets.js 
+ 4983  node pets.js
  4984  node pets.js
  4985  node pets.js a
- 4986  node pets.js 
+ 4986  node pets.js
  4987  node pets.js read
- 4988  node pets.js 
+ 4988  node pets.js
  4989  node pets.js read
  4990  node pets.js
  4991  node pets.js read
@@ -4993,7 +4993,7 @@
  4993  node pets.js read
  4994  node pets.js
  4995  node pets.js read
- 4996  node pets.js 
+ 4996  node pets.js
  4997  node pets.js read
  4998  node pets.js
  4999  node pets.js read
@@ -5003,22 +5003,22 @@
  5003  node pets.js
  5004  node pets.js read
  5005  node pets.js write
- 5006  node pets.js 
+ 5006  node pets.js
  5007  node pets.js write
  5008  node pets.js
  5009  node pets.js write
- 5010  node pets.js 
+ 5010  node pets.js
  5011  node pets.js write
- 5012  node pets.js 
+ 5012  node pets.js
  5013  node pets.js read
  5014  node pets.js
  5015  node pets.js read 1
  5016  node pets.js read 2
  5017  node pets.js read 0
  5018  node pets.js
- 5019  node pets.js read 
+ 5019  node pets.js read
  5020  ~/.atom/config.cson
- 5021  node pets.js read 
+ 5021  node pets.js read
  5022  node pets.js read 2
  5023  node pets.js read 1
  5024  node pets.js read 5
@@ -5034,7 +5034,7 @@
  5034  cd ExcercisesUnit2
  5035  atom .
  5036  node pets.js create stuff
- 5037  node pets.js read 
+ 5037  node pets.js read
  5038  node pets.js create stuff
  5039  node pets.js create yellow
  5040  ../
@@ -5061,7 +5061,7 @@
  5061  ls
  5062  cd knex-intro-demo
  5063  ls
- 5064  atom 
+ 5064  atom
  5065  atom .
  5066  knex migrate: make create_zebras
  5067  npm install knex
@@ -5123,10 +5123,10 @@
  5123  cd fs-pet-shop
  5124  atom.
  5125  atom .
- 5126  node pets 
+ 5126  node pets
  5127  node pets read
  5128  node pets read 1
- 5129  node pets.js read 
+ 5129  node pets.js read
  5130  node pets.js read
  5131  node pets.js read 1
  5132  node pets.js create FIFTY
@@ -5332,7 +5332,7 @@
  5332  cd ExcercisesUnit2
  5333  ls
  5334  cd movie-crud
- 5335  node app.js 
+ 5335  node app.js
  5336  ../
  5337  ls
  5338  cd fs-pet-shop
@@ -5344,7 +5344,7 @@
  5344  node pets.js read 1
  5345  node pets.js create
  5346  node pets.js create bot
- 5347  node pets.js 
+ 5347  node pets.js
  5348  git add pets.js
  5349  git commit -m "Read Works"
  5350  git push origin master
@@ -5397,9 +5397,9 @@
  5397  ../
  5398  ls
  5399  cd movie-crud
- 5400  atom . 
+ 5400  atom .
  5401  npm test test/expressServer.test
- 5402  atom . 
+ 5402  atom .
  5403  npm test test/expressServer.test
  5404  ../
  5405  ls
@@ -5428,7 +5428,7 @@
  5428  node pets.js read 1
  5429  node pets.js create Bob
  5430  npm test test/expressServer.test
- 5431  nodemon 
+ 5431  nodemon
  5432  get checkout master
  5433  git checkout master
  5434  git checkout restfullExpress
@@ -5535,7 +5535,7 @@
  5535  mysql
  5536  npm mysql
  5537  npm install mysql
- 5538  psql 
+ 5538  psql
  5539  git add -A
  5540  git commit -m "Starting
  5541  git commit -m "Started"
