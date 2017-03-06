@@ -1,0 +1,28 @@
+{
+  "name": "gblogjordan",
+  "version": "1.0.0",
+  "description": "![gBlog](gBlog.png)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanwhitestephenson/GBlogJordan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanwhitestephenson/GBlogJordan/issues"
+  },
+  "homepage": "https://github.com/jordanwhitestephenson/GBlogJordan#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "knex": "^0.12.7",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.3"
+  }
+}
