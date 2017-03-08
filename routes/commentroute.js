@@ -9,7 +9,7 @@ function commentEntry() {
 router.get('/', function(req, res){
 knex('comment')
   .leftJoin('blog', 'blog.id', '=', 'comment.blog_id')
-  .leftJoin('username', 'comment.id', '=', 'username.id')
+  .leftJoin('username', 'username.id', '=', 'comment.username_id')
   .select()
   .then(function(result){
     res.json(result);

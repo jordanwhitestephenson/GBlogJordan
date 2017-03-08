@@ -8,26 +8,29 @@ function Blogentry() {
 // <--JOIN--->
 router.get('/', function(req, res) {
     knex('blog')
-        .leftJoin('username', 'username.id', '=', 'blog.username_id')
-        .select()
+        .leftJoin('username', 'username.id','username_id')
+        .select('blog.id', 'blog.body', 'blog.name', 'blog.title', 'blog.username_id', 'username.email')
         .then(function(result) {
             res.json(result);
         })
 })
 //CREATE BLOG POST//
 router.post('/', function(req, res) {
+  //if email is already used/
     var userID;
+    console.log(res)
     knex('username').where('email', req.body.email).select('id').then(result => {
         userID = result[0].id
-    })
-    Blogentry().insert({
-            username_id: userID,
-            title: req.body.title,
-            body: req.body.body
-        }, ['username_id', 'title', 'body'])
+        return Blogentry().insert({
+          name: req.body.name,
+          username_id: userID,
+          title: req.body.title,
+          body: req.body.body
+        }, ['username_id', 'body', 'title', 'name'])
         .then(function(result) {
-            res.json(result)
+          res.json(result)
         })
+    })
         .catch(result => {
             console.log(`User not found, new userID is ${userID}`);
             //createnew Author
@@ -37,11 +40,12 @@ router.post('/', function(req, res) {
                 }, 'id')
                 //create blog
                 .then(result => {
-                    return Blogentry().inster({
+                    return Blogentry().insert({
                             username_id: result[0],
                             title: req.body.title,
-                            body: req.body.body
-                        }, ['username_id', 'title', 'body'])
+                            body: req.body.body,
+                            name: req.body.name
+                        }, ['username_id', 'title', 'body', 'name'])
                         .then(result => {
                             res.json(result)
                         });

@@ -72,19 +72,14 @@ $(document).ready(function(knex, Promise) {
                 });
         });
     });
-    $.get('/commentroute', function(data) {
-      var commentID = $(this).find('a').attr('id')
-      var myIndex = myLocation -1
-      console.log(data)
-      console.log(data[myIndex].body)
-      if(data.blog_id === data.id){
-        $('#commentIDPara').append('<p>' + data[myIndex].body + '</p>' + 'ojaoiodfan' + '<p>');
-      }
-
-    });
+    // $.get('/commentroute', function(data) {
+    //   var commentID = $(this).find('a').attr('id')
+    //   var myIndex = myLocation -1
+    //   console.log(data)
+    //   // console.log(data[myIndex].body)
+    //   if(data.blog_id === data.id){
+    //     $('#commentIDPara').append('<p>' + data[myIndex].body + '</p>' + 'ojaoiodfan' + '<p>');
+    //   }
+    //
+    // });
 });
-
-
-// apppend everything, blogpost need ID === commentID
-// catnip^=^commentCatnipID
-// attributeStartswith

@@ -2,12 +2,12 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('blog', function(table){
-    table.increments().notNullable()
+    table.increments()
     table.string('name')
     table.timestamp('created_at').defaultTo(knex.fn.now())
     table.string('title')
     table.string('body')
-    table.integer('username_id')
+    table.integer('username_id').notNullable()
           .references('id')
           .inTable('username')
   })
