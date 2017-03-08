@@ -1,41 +1,84 @@
-const router = require('express').Router()
-const knex = require('../db/knex')
+const router = require('express').Router();
+const knex = require('../db/knex');
+var count = 0;
 
 function Blogentry() {
     return knex('blog');
 }
-
+// <--JOIN--->
+router.get('/', function(req, res) {
+    knex('blog')
+        .leftJoin('username', 'username.id', '=', 'blog.username_id')
+        .select()
+        .then(function(result) {
+            res.json(result);
+        })
+})
+//CREATE BLOG POST//
 router.post('/', function(req, res) {
+    var userID;
+    knex('username').where('email', req.body.email).select('id').then(result => {
+        userID = result[0].id
+    })
     Blogentry().insert({
-            name: req.body.name,
-            create_time: req.body.create_time,
+            username_id: userID,
             title: req.body.title,
             body: req.body.body
-        }, 'id')
-        .then(function(res) {
-            res.json(result);
-        });
+        }, ['username_id', 'title', 'body'])
+        .then(function(result) {
+            res.json(result)
+        })
+        .catch(result => {
+            console.log(`User not found, new userID is ${userID}`);
+            //createnew Author
+            knex('username').insert({
+                    email: req.body.email,
+                    name: req.body.name
+                }, 'id')
+                //create blog
+                .then(result => {
+                    return Blogentry().inster({
+                            username_id: result[0],
+                            title: req.body.title,
+                            body: req.body.body
+                        }, ['username_id', 'title', 'body'])
+                        .then(result => {
+                            res.json(result)
+                        });
+                })
+        })
 });
-router.get('/', function(req, res){
-  Blogentry().select().then(function(result){
-    res.json(result);
-  });
+
+
+
+router.get('/', function(req, res) {
+    Blogentry().select().then(function(result) {
+        res.json(result);
+    });
 });
 
-router.get('/:id', function(req, res){
-  Blogentry().where('id', req.params.id).first().then(function(result){
-    res.json(result);
-  });
-});
-
-
-router.put('/:id', function(req, res){
-  Blogentry().where('id', req.params.id).update({
-    body: req.body.body
-  }).then(function(result){
-    res.json(result);
-  });
+router.get('/:id', function(req, res) {
+    Blogentry().where('id', req.params.id).first().then(function(result) {
+        res.json(result);
+    });
 });
 
 
-module.exports = router
+router.put('/:id', function(req, res) {
+    Blogentry().where('id', req.params.id).update({
+        body: req.body.body
+    }).then(function(result) {
+        res.json(result);
+    });
+});
+
+router.delete('/:id', function(req, res) {
+    Blogentry().where('id', req.params.id).del('id').then(function(count) {
+        console.log(count);
+    }).finally(function(result) {
+        console.log(result);
+    });
+
+});
+
+module.exports = router;
