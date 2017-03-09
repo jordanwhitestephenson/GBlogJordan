@@ -11,6 +11,7 @@ exports.up = function(knex, Promise) {
         table.integer('blog_id')
             .references('id')
             .inTable('blog')
+            .onDelete('cascade')
     })
 };
 

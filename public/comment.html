@@ -66,7 +66,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>Comment</h1>
+
+                        <h1 id = "blogPostCommentTitle"></h1>
                         <hr class="small">
                         <span class="subheading"><p id= "blogPostName"></p></span>
                     </div>
@@ -79,9 +80,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div id = "commentIDPara">
-                <p> GO HERE!</p>
-              </div>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -112,6 +110,11 @@
                         </div>
                     </div>
                 </form>
+                <center>
+                <h3>Current Comments</h3>
+                <div id = "commentIDPara">
+                </div>
+              </center>
             </div>
         </div>
     </div>
@@ -163,8 +166,8 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-        <script src="comment.js"></script>
+    <script src="blogcomments.js"></script>
+    <script src="main.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>

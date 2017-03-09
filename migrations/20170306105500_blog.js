@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
     table.string('name')
     table.timestamp('created_at').defaultTo(knex.fn.now())
     table.string('title')
-    table.string('body')
+    table.string('body', 5000)
     table.integer('username_id').notNullable()
           .references('id')
           .inTable('username')

@@ -9,10 +9,11 @@ function Blogentry() {
 router.get('/', function(req, res) {
     knex('blog')
         .leftJoin('username', 'username.id','username_id')
-        .select('blog.id', 'blog.body', 'blog.name', 'blog.title', 'blog.username_id', 'username.email')
+        .select('blog.id', 'blog.body', 'blog.name', 'blog.title', 'blog.username_id', 'username.email', 'created_at')
         .then(function(result) {
             res.json(result);
         })
+
 })
 //CREATE BLOG POST//
 router.post('/', function(req, res) {
@@ -79,10 +80,9 @@ router.put('/:id', function(req, res) {
 router.delete('/:id', function(req, res) {
     Blogentry().where('id', req.params.id).del('id').then(function(count) {
         console.log(count);
-    }).finally(function(result) {
+    }).then(function(result) {
         console.log(result);
     });
-
 });
 
 module.exports = router;

@@ -10,17 +10,20 @@ router.get('/', function(req, res){
 knex('comment')
   .leftJoin('blog', 'blog.id', '=', 'comment.blog_id')
   .leftJoin('username', 'username.id', '=', 'comment.username_id')
-  .select()
+  .select('comment.created_at','blog.title', 'comment.id', 'comment.body','comment.blog_id', 'username.email')
   .then(function(result){
     res.json(result);
   })
 })
+
 router.post('/', function(req, res){
+  console.log('heyyyy');
 knex('comment')
   .insert({
     body: req.body.body,
-    username_id: req.body.username_id,
-    blog_id: req.body.blog_id
+    blog_id: req.body.blog_id,
+    // email: req.body.email,
+    username_id: req.body.username_id
    }, 'id')
   .then(function(result){
     res.json(result);
@@ -46,6 +49,14 @@ router.put('/:id', function(req, res){
   }).then(function(result){
     res.json(result);
   });
+});
+
+router.delete('/:id', function(req, res) {
+    commentEntry().where('id', req.params.id).del('id').then(function(count) {
+        console.log(count);
+    }).then(function(result) {
+        console.log(result);
+    });
 });
 
 
