@@ -71,7 +71,9 @@ router.get('/:id', function(req, res) {
 
 router.put('/:id', function(req, res) {
     Blogentry().where('id', req.params.id).update({
-        body: req.body.body
+        body: req.body.body,
+        name: req.body.name,
+        title: req.body.title
     }).then(function(result) {
         res.json(result);
     });

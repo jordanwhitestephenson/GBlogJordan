@@ -1,6 +1,5 @@
 $(document).ready(function() {
     var myLocation = decodeURIComponent(window.location.search).split("=")[1];
-    // console.log(myLocation)
     var locationIndex = myLocation - 1
 
 
@@ -25,8 +24,8 @@ $(document).ready(function() {
 
         $('.deleteCommentButton').on('click', function(e) {
           var deletecommentID = $(this).find('a').attr('id');
-
-          console.log('deletebuttonclicked!, ID =', deletecommentID)
+          var id = $(this).attr('id');
+          console.log('deletebuttonclicked!, ID =', id)
           e.preventDefault();
 
           $.ajax({
@@ -35,7 +34,7 @@ $(document).ready(function() {
             contentType: "application/json"
           })
           .then(response => {
-            window.location.reload(true);
+            // window.location.reload(true);
           });
         });
     });

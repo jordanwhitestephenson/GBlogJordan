@@ -5,8 +5,8 @@ exports.up = function(knex, Promise) {
         table.increments();
         table.timestamp('created_at').defaultTo(knex.fn.now());
         table.string('body');
-        table.integer('username_id')
-            .references('id')
+        table.string('username_email')
+            .references('email')
             .inTable('username')
         table.integer('blog_id')
             .references('id')

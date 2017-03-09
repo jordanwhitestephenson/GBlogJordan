@@ -9,26 +9,51 @@ function commentEntry() {
 router.get('/', function(req, res){
 knex('comment')
   .leftJoin('blog', 'blog.id', '=', 'comment.blog_id')
-  .leftJoin('username', 'username.id', '=', 'comment.username_id')
-  .select('comment.created_at','blog.title', 'comment.id', 'comment.body','comment.blog_id', 'username.email')
+  .leftJoin('username', 'username.email', '=', 'comment.username_email')
+  .select('comment.created_at','blog.title', 'comment.id', 'comment.body','comment.blog_id', 'username_email')
   .then(function(result){
     res.json(result);
   })
 })
 
+//POST NEW COMMENT!//
 router.post('/', function(req, res){
-  console.log('heyyyy');
-knex('comment')
-  .insert({
-    body: req.body.body,
-    blog_id: req.body.blog_id,
-    // email: req.body.email,
-    username_id: req.body.username_id
-   }, 'id')
+var newuserID;
+//if commentted email is already in system
+knex('username').where('email', req.body.email).select('id').then(result => {
+    newuserID = result[0].id
+    return knex('comment').insert({
+      body: req.body.body,
+      blog_id: req.body.blog_id,
+      username_email: req.body.email
+    }, 'id')
   .then(function(result){
     res.json(result);
   });
+})
+.catch(result => {
+            console.log(`User not found, new userID is ${newuserID}`);
+            //createnew Author
+            knex('username').insert({
+                    email: req.body.email
+                    // username.id = result[0]
+                    // name: req.body.name
+                }, 'id')
+            .then(result => {
+                return commentEntry().insert({
+                      body: req.body.body,
+                      blog_id: req.body.blog_id,
+                      username_email: req.body.email
+                    }, ['body', 'blog_id', 'username_email'])
+                        .then(result => {
+                            res.json(result)
+                        });
+                })
+        })
 });
+
+
+
 
 router.get('/', function(req, res){
   commentEntry().select().then(function(result){

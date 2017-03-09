@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
  var myLocation = decodeURIComponent(window.location.search).split("=")[1]
-  console.log(myLocation)
 
     $.ajax({
             method: 'GET',
@@ -14,7 +13,7 @@ $(document).ready(function() {
               $('#titleBlog').val(success.title)
               $('#bodyBlog').val(success.body)
             });
-        
+
 
             $('#blogEditButton').on('click', function(event) {
                 event.preventDefault();
@@ -22,8 +21,10 @@ $(document).ready(function() {
                     id: `${myLocation}`,
                     name: $('#nameBlog').val(),
                     title: $('#titleBlog').val(),
-                    body: $('#bodyBlog').val(),
+                    body: $('#bodyBlog').val()
                 };
+                console.log(myEdittedBlogPost.title)
+                console.log(myEdittedBlogPost.body)
                 $.ajax({
                         method: "PUT",
                         url: `/blogroute/${myLocation}`,
