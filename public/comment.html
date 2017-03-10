@@ -45,15 +45,6 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,7 +60,7 @@
 
                         <h1 id = "blogPostCommentTitle"></h1>
                         <hr class="small">
-                        <span class="subheading"><p id= "blogPostName"></p></span>
+                        <span class="subheading"><p class= "oasdf"></p></span>
                     </div>
                 </div>
             </div>
@@ -78,6 +69,11 @@
 
     <!-- Main Content -->
     <div class="container">
+      <center>
+      <h3>Current Comments</h3>
+      <div id = "commentIDPara">
+      </div>
+    </center>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <form name="sentMessage" id="contactForm" novalidate>
@@ -110,11 +106,7 @@
                         </div>
                     </div>
                 </form>
-                <center>
-                <h3>Current Comments</h3>
-                <div id = "commentIDPara">
-                </div>
-              </center>
+
             </div>
         </div>
     </div>
@@ -168,6 +160,7 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="blogcomments.js"></script>
     <script src="main.js"></script>
+    <script src="blogview.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>

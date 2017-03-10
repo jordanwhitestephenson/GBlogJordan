@@ -1,17 +1,21 @@
 const router = require('express').Router();
 const knex = require('../db/knex');
 var count = 0;
+const moment = require('moment')
 
 function Blogentry() {
     return knex('blog');
 }
+
+
 // <--JOIN--->
 router.get('/', function(req, res) {
+
     knex('blog')
         .leftJoin('username', 'username.id','username_id')
         .select('blog.id', 'blog.body', 'blog.name', 'blog.title', 'blog.username_id', 'username.email', 'created_at')
         .then(function(result) {
-            res.json(result);
+            res.json(result)
         })
 
 })
@@ -26,10 +30,11 @@ router.post('/', function(req, res) {
           name: req.body.name,
           username_id: userID,
           title: req.body.title,
-          body: req.body.body
+          body: req.body.body,
         }, ['username_id', 'body', 'title', 'name'])
         .then(function(result) {
           res.json(result)
+          res.json(myDate)
         })
     })
         .catch(result => {

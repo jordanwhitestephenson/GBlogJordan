@@ -2,15 +2,21 @@ var commentCount = 0;
 var editCount = 0;
 var myLocation = decodeURIComponent(window.location.search).split("=")[1];
 
-$(document).ready(function(knex, Promise) {
+
+
+
+$(document).ready(function(knex, moment) {
     $.get('/blogroute', function(data) {
         for (var i = 0; i < data.length; i++) {
+          var time = data[i].created_at;
+          var splicedTime= time.replace('T', ' ').slice(0, 10);
             $('.post-preview').append(
                 `<div>
                 <h2 class="post-title"><a href ="/blogView.html?id=${data[i].id}">
-                 ${data[i].title} ${data[i].id} </h2></div><div
-                <p class="post-meta"> ${data[i].body} </p>
-                <h6 class="post-meta"> Posted On : ${data[i].created_at} </h6>
+                 ${data[i].title} ${data[i].id} </h2></div><div>
+                <p class="post-meta" id = "shortsentence"> ${data[i].body} </p>
+
+                <h6 class="post-meta"> Posted On : ${(splicedTime)} </h6>
 
                 <button type="button" class ="editBlog" id=${data[i].id}>
                 <a id=${data[i].id}> Edit </a>
@@ -34,7 +40,7 @@ $(document).ready(function(knex, Promise) {
             myNewComment = {
                 blog_id: myLocation,
                 body: $('#messageComment').val(),
-                email: $('#emailComment').val()
+                username_email: $('#emailComment').val()
                 // username_id: 5
             };
             console.log(myNewComment);

@@ -22,6 +22,7 @@ $(document).ready(function() {
             })
             .then(response => {
                 console.log(myNewPost);
+                window.location = "/index.html";
             });
     });
 

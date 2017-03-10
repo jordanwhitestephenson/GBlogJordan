@@ -5,6 +5,8 @@ const bodyParser = require('body-parser')
 const blogFile = require('./routes/blogroute')
 const userFile = require('./routes/userroute')
 const commentFile = require('./routes/commentroute')
+const moment = require('moment')
+moment().format();
 
 
 app.use(bodyParser.json())
@@ -19,4 +21,4 @@ app.listen(PORT, ()=> {
   console.log(`Listening on port ${PORT}`)
 })
 
-module.exports = blogFile, userFile, commentFile;
+module.exports = blogFile, userFile, commentFile, moment
