@@ -1,7 +1,3 @@
-const transformer = require('knex-csv-transformer').transformer;
-const transfomerHeader = require('knex-csv-transformer').transfomerHeader;
-const path = require('path');
-
 exports.seed = function(knex, Promise) {
     // Deletes ALL existing entries
     return knex('blog').del()
