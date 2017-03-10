@@ -10,6 +10,7 @@ exports.up = function(knex, Promise) {
     table.integer('username_id').notNullable()
           .references('id')
           .inTable('username')
+          .onDelete('cascade')
   })
 };
 exports.down = function(knex, Promise) {
